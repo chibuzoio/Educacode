@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../coderback/store.php");                        
-    require_once("../coderback/utility.php");                        
+    require_once("../Educacode/coderback/store.php");                        
+    require_once("../Educacode/coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                                     
 
@@ -10,7 +10,7 @@
     $store->setBodyID("");                     
     $store->setPageTitle("Coder");                         
 
-    require_once("../coderback/includeheader.php");                                
+    require_once("../Educacode/coderback/includeheader.php");                                
 
 ?>                                                                      
 
@@ -22,7 +22,7 @@
                     <span class="loginTitle">Login</span>
                 </div>
                 <div class="loginComponents">                                                         
-                    <form id="loginForm" action="../coderback/loginserver.php" method="post">                                                                
+                    <form id="loginForm" action="../Educacode/coderback/loginserver.php" method="post">                                                                
                         <input id="loginEmail" type="text" name="loginEmail" placeholder="Email" class="col-xs-5 loginEmail">
                         <input id="loginPassword" type="password" name="loginPassword" placeholder="Password" class="col-xs-5 loginPassword">
                         <input id="loginSubmit" type="submit" value="Login" class="loginSubmit">                                                    
@@ -35,7 +35,7 @@
                 <span class="signUpIconClass icon fa-edit"></span>
                 <span class="signUpTitle">Sign Up</span>
             </div>
-            <form id="signUpForm" action="../coderback/signupserver.php" method="post">
+            <form id="signUpForm" action="../Educacode/coderback/signupserver.php" method="post">
                 <input id="firstName" type="text" name="firstName" class="firstInput textInput" placeholder="First Name"/>
                 <div class="firstNameError hideComponent">Please Enter Your First Name</div>
                 <input id="lastName" type="text" name="lastName" class="lastInput textInput" placeholder="Last Name"/>                  
@@ -69,13 +69,13 @@
 
 <?php 
 
-    require_once("../coderback/floatfooter.php");                                
+    require_once("../Educacode/coderback/floatfooter.php");                                
 ?>                                     
 
     </div>                             
 
 <?php                         
 
-    require_once("../coderback/includefooter.php");                  
+    require_once("../Educacode/coderback/includefooter.php");                  
 
 

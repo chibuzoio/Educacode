@@ -1,8 +1,8 @@
 
 (function($) {
 
-	var getAllEmail = $.getJSON('../coderback/jsonregister.php');                       
-	var getControlCosts = $.getJSON('../coderback/jsoncontrolcost.php');                       
+	var getAllEmail = $.getJSON('../Educacode/coderback/jsonregister.php');                       
+	var getControlCosts = $.getJSON('../Educacode/coderback/jsoncontrolcost.php');                       
 
 	var controlMultiple = 0;                      
 	var checkedCategories = [];                            
@@ -384,7 +384,7 @@
 
 	$("#submitQuotation").click(function() {                                  
 		allQuotationObjects.submitQuotation = "Get Quotation";                          
-		var postQuotationData = $.post("../coderback/quotationserver.php", allQuotationObjects);                                 
+		var postQuotationData = $.post("../Educacode/coderback/quotationserver.php", allQuotationObjects);                                 
 
 		postQuotationData.done(function(response) {                            
 

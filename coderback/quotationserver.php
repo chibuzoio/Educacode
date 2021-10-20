@@ -1,7 +1,7 @@
 <?php          
 
-require_once("../coderback/datastore.php");                 
-require_once("../coderback/utility.php");              
+require_once("../Educacode/coderback/datastore.php");                 
+require_once("../Educacode/coderback/utility.php");              
 
 $exists = "";                        
 
@@ -253,7 +253,7 @@ if ($submit != null) {
 			 	
 			print("Gotten Value bizControlCost Value Is " . $bizControlCost);                     
 
-	        // header("Location: " . "http://" . $_SERVER['HTTP_HOST'] . "/coderback/quotationserver.php");                 
+	        // header("Location: " . "http://" . $_SERVER['HTTP_HOST'] . "/Educacode/coderback/quotationserver.php");                 
 	        // header('Location: http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);            
         } 
         catch(PDOException $e){                                

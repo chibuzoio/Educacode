@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../coderback/store.php");                        
-    require_once("../coderback/utility.php");                        
+    require_once("../Educacode/coderback/store.php");                        
+    require_once("../Educacode/coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                      
 
@@ -11,7 +11,7 @@
 	$store->setBodyID("");                     
 	$store->setPageTitle("Coder");                         
 
-	require_once("../coderback/includeheader.php");                                
+	require_once("../Educacode/coderback/includeheader.php");                                
 
 ?>                          
 
@@ -177,7 +177,7 @@
 
 <?php 
 // session_destroy();
-	require_once("../coderback/floatfooter.php");                                
+	require_once("../Educacode/coderback/floatfooter.php");                                
 
 ?>                                     
 
@@ -185,6 +185,6 @@
 
 <?php                         
 
-	require_once("../coderback/includefooter.php");                  
+	require_once("../Educacode/coderback/includefooter.php");                  
 
 

@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../coderback/store.php");                        
-    require_once("../coderback/utility.php");                        
+    require_once("../Educacode/coderback/store.php");                        
+    require_once("../Educacode/coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                            
 
@@ -10,7 +10,7 @@
     $store->setBodyID("");                     
     $store->setPageTitle("Request Quotation");                         
 
-    require_once("../coderback/includeheader.php");                                
+    require_once("../Educacode/coderback/includeheader.php");                                
 
 ?>                          
             
@@ -69,11 +69,11 @@
                     
                 <?php                           
 
-                    require_once("../coderback/businessquoteform.php");                    
-                    require_once("../coderback/churchquoteform.php");                
-                    require_once("../coderback/companyquoteform.php");                
-                    require_once("../coderback/ecommercequoteform.php");                
-                    require_once("../coderback/schoolquoteform.php");                
+                    require_once("../Educacode/coderback/businessquoteform.php");                    
+                    require_once("../Educacode/coderback/churchquoteform.php");                
+                    require_once("../Educacode/coderback/companyquoteform.php");                
+                    require_once("../Educacode/coderback/ecommercequoteform.php");                
+                    require_once("../Educacode/coderback/schoolquoteform.php");                
 
                 ?>                           
 
@@ -181,13 +181,13 @@
 
 <?php 
 
-    require_once("../coderback/floatfooter.php");                                
+    require_once("../Educacode/coderback/floatfooter.php");                                
 ?>                                     
 
     </div>                             
 
 <?php                         
 
-    require_once("../coderback/includefooter.php");                  
+    require_once("../Educacode/coderback/includefooter.php");                  
 
 

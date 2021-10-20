@@ -44,13 +44,13 @@
 	newProjectRequirement.requirementTitle = "";                                               
 	newProjectRequirement.requirementBody = "";                                               
 
-	var getJSONWords = $.getJSON('../coderback/jsondefinitions.php');                       
-	var getJSONProjectTitles = $.getJSON('../coderback/jsonprojecttitles.php');                       
-	var getJSONRequirementTitles = $.getJSON('../coderback/jsonrequirementtitles.php');                       
+	var getJSONWords = $.getJSON('../Educacode/coderback/jsondefinitions.php');                       
+	var getJSONProjectTitles = $.getJSON('../Educacode/coderback/jsonprojecttitles.php');                       
+	var getJSONRequirementTitles = $.getJSON('../Educacode/coderback/jsonrequirementtitles.php');                       
 	
 	$("#addProjectRequirementButton").click(function() {                                               
 		if (inputTrackerArray.length === projectSubtitleInputControlArray.length) {                                         
-			$.post("../coderback/createrequirementserver.php", newProjectRequirement).done(function(theResponse) {                            
+			$.post("../Educacode/coderback/createrequirementserver.php", newProjectRequirement).done(function(theResponse) {                            
 				$("#parentProjectTitleForRequirement").val("");                               
 				$("#addProjectRequirementTitle").val("");                       
 				$("#addProjectRequirementBody").val("");                       
@@ -141,7 +141,7 @@
 		var requirementRequestObject = {};                                   
 		requirementRequestObject.requirementTableName = twoDimensionalArraySubarray[3];                                       
 
-		$.post("../coderback/jsonrequirementtitles.php", requirementRequestObject).done(function(theResponse) {                                  
+		$.post("../Educacode/coderback/jsonrequirementtitles.php", requirementRequestObject).done(function(theResponse) {                                  
 			projectRequirementArray = theResponse;                                           
 			console.log("gotten projectRequirementArray is " + JSON.stringify(projectRequirementArray));
 		});                                                                         
@@ -230,7 +230,7 @@
 
 	$("#addProjectSubtitleButton").click(function() {                                               
 		if (inputTrackerArray.length === projectSubtitleInputControlArray.length) {                                         
-			$.post("../coderback/createsubtitleserver.php", newProjectSubtitle).done(function(theResponse) {                            
+			$.post("../Educacode/coderback/createsubtitleserver.php", newProjectSubtitle).done(function(theResponse) {                            
 				$("#parentProjectTitleForSubtitle").val("");                               
 				$("#addProjectSubtitleBody").val("");                       
 				$("#addProjectSubtitle").val("");                       
@@ -357,7 +357,7 @@
 		var subtitlesRequestObject = {};                                   
 		subtitlesRequestObject.projectTableName = twoDimensionalArraySubarray[2];                                       
 
-		$.post("../coderback/jsonprojectsubtitles.php", subtitlesRequestObject).done(function(theResponse) {                                  
+		$.post("../Educacode/coderback/jsonprojectsubtitles.php", subtitlesRequestObject).done(function(theResponse) {                                  
 			projectSubtitleArray = theResponse;                                           
 		});                                                                        
 	});                                           
@@ -512,7 +512,7 @@
 
 			$.ajax({                                       
 				type : "POST",                                           
-				url : "../coderback/createprojectserver.php",                                    
+				url : "../Educacode/coderback/createprojectserver.php",                                    
 				data : theFormData,                              
 				processData : false,                                    
 				contentType : false                                              
@@ -742,7 +742,7 @@
 	});                         
 
 	$("#loadDictionaryData").click(function() {                  
-		$.getJSON('../coderback/jsonstoredata.php').done(function(theResponse) {                   
+		$.getJSON('../Educacode/coderback/jsonstoredata.php').done(function(theResponse) {                   
 			for (var i = 0; i < theResponse.length; i++) {
 				definitions.title = removeMultipleSpaces(theResponse[i][0]);                        
 				definitions.title = toTitleCase(definitions.title);                        
@@ -750,7 +750,7 @@
 				definitions.meaning = upperCaseFirstLetter(definitions.meaning);                                
  				definitions.meaning = insertBoldElement(definitions.meaning);                                 
 
-				$.post("../coderback/definitionserver.php", definitions).done(function(response) {                            
+				$.post("../Educacode/coderback/definitionserver.php", definitions).done(function(response) {                            
 					$("#wordInput").val("");                     
 					$("#definitionInput").val("");                     
 					definitions.meaning = "";                 
@@ -765,7 +765,7 @@
 			definitions.meaning = $.trim($("#definitionInput").val());                                  
 			definitions.meaning = upperCaseFirstLetter(definitions.meaning);                                  
 			definitions.meaning = insertBoldElement(definitions.meaning);                                           
-			var postDefinition = $.post("../coderback/definitionserver.php", definitions);                                 
+			var postDefinition = $.post("../Educacode/coderback/definitionserver.php", definitions);                                 
 
 			postDefinition.done(function(response) {                            
 				$("#wordInput").val("");                     

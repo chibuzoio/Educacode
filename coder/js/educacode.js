@@ -12,9 +12,9 @@
 	educacode.meaning = "";                      
 	educacode.category = "console";                           
 
-	var getDefinition = $.getJSON('../coderback/jsondefinitions.php');                         
-	var getAllConsoleHelp = $.getJSON('../coderback/jsonconsolehelper.php');                         
-	var getGeneralSearchWords = $.getJSON('../coderback/jsongeneralsearch.php');                         
+	var getDefinition = $.getJSON('../Educacode/coderback/jsondefinitions.php');                         
+	var getAllConsoleHelp = $.getJSON('../Educacode/coderback/jsonconsolehelper.php');                         
+	var getGeneralSearchWords = $.getJSON('../Educacode/coderback/jsongeneralsearch.php');                         
 
 	getAllConsoleHelp.done(function(theJson) {                    
 		for (var i = 0; i < theJson.length; i++) {                            
@@ -43,7 +43,7 @@
 		if (educacode.title !== "") {                            
 			educacode.meaning = $.trim($("#consoleHelperBody").val());                         
 			educacode.meaning = upperCaseFirstLetter(educacode.meaning);                            
-			var postDefinition = $.post("../coderback/consolehelperserver.php", educacode);                                 
+			var postDefinition = $.post("../Educacode/coderback/consolehelperserver.php", educacode);                                 
 
 			postDefinition.done(function(response) {                            
 				$("#consoleHelperTitle").val("");                     
@@ -383,7 +383,7 @@
 	}                                     
 
 	var batchEditEncyclopedia = function() {                                 
-		var getDefinition = $.getJSON('../coderback/jsonfetchdefinition.php');                                
+		var getDefinition = $.getJSON('../Educacode/coderback/jsonfetchdefinition.php');                                
 
 		getDefinition.done(function(theResponse) {                      
 			for (var i = 0; i < theResponse.length; i++) {                     
@@ -391,7 +391,7 @@
 				educacode.meaning = $("<div/>").html(theResponse[i][1]).text();                        
 				educacode.meaning = insertBoldElement(educacode.meaning);                          
 
-				$.post("../coderback/batcheditor.php", educacode);                           
+				$.post("../Educacode/coderback/batcheditor.php", educacode);                           
 
 				$("#batchEditorResult").append("<div>" + educacode.title                                        
 					+ "</div><div>" + educacode.meaning + "</div>");                            

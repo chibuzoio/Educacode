@@ -1,6 +1,6 @@
 <?php                          
 
-require_once("../coderback/datastore.php");                           
+require_once("../Educacode/coderback/datastore.php");                           
 
 $query = "select searchWord from parentsearchtable";                   
 

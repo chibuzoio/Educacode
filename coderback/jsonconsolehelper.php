@@ -1,6 +1,6 @@
 <?php                          
 
-require_once("../coderback/datastore.php");                           
+require_once("../Educacode/coderback/datastore.php");                           
 
 $consoleHelpArray = array();                             
 $query = "select * from consolesistance order by command";                   

@@ -40,7 +40,7 @@
 * SERVER SIDE AND authenticatedUserId MEMBERID FOR THE CLIENT SIDE                *
 ***********************************************************************************/
 
-    $.getJSON("../coderback/jsonauthenticateduser.php").done(function(theResponse) {                                                        
+    $.getJSON("../Educacode/coderback/jsonauthenticateduser.php").done(function(theResponse) {                                                        
     	authenticatedUser = theResponse.slice();                                                      
 
     	if (authenticatedUser[0] === "true") {                                         
@@ -48,7 +48,7 @@
     	}                                                        
     });                                                                           
 
-    $.getJSON("../coderback/jsoneducacodequestion.php").done(function(theResponse) {                                                
+    $.getJSON("../Educacode/coderback/jsoneducacodequestion.php").done(function(theResponse) {                                                
 		for (var i = 0; i < theResponse.length; i++) {                                                     
 			builtQuestionString += "<div class=\"communityQuestionDivision\"><div "                                
 				+ "class=\"communityQuestion baseColor\">" + theResponse[i][5] + "</div>"                             
@@ -87,7 +87,7 @@
 			community.answerInterface.questionId = community.questionInterface.questionId;
 			community.answerInterface.answerTableName = community.questionInterface.answerTableName;
 
-			$.post("../coderback/answerquestionserver.php", community.answerInterface).done(function(theResponse) {
+			$.post("../Educacode/coderback/answerquestionserver.php", community.answerInterface).done(function(theResponse) {
 				var useResponse = getResponseObject(theResponse); 
 
 				community.questionInterface.numberOfAnswers = useResponse[0];
@@ -164,7 +164,7 @@
 
 // Requirements: reply content, replyId, replyTableName
 
-/*    		$.post("../coderback/editreplyserver.php", community.replyInterface).done(function(theResponse) {
+/*    		$.post("../Educacode/coderback/editreplyserver.php", community.replyInterface).done(function(theResponse) {
   				$(event.target).parent(".answerReplyLayout").parent(".allReplyComposite").fadeOut(353);  
   				$(event.target).parent(".answerReplyLayout").parent(".allReplyComposite").parent(".builtAnswerReplies").parent(".questionSection").find(".answerInformation").find(".replyInfo").find(".answerRepliesMarker").html(theResponse + "&nbsp;replies");  
     		});*/
@@ -211,7 +211,7 @@
 /* Response after reload: {"answerTableName":"answer150494556900027",
 "answerId":"1","answer":"uouofdaui ufaoufodauif uaif iuaodf uiafu ioasfu idafu afu sauf au fiaufsufosfu"}*/
 
-/*    		$.post("../coderback/editanswerserver.php", community.replyInterface).done(function(theResponse) {
+/*    		$.post("../Educacode/coderback/editanswerserver.php", community.replyInterface).done(function(theResponse) {
   				$(event.target).parent(".answerReplyLayout").parent(".allReplyComposite").fadeOut(353);  
   				$(event.target).parent(".answerReplyLayout").parent(".allReplyComposite").parent(".builtAnswerReplies").parent(".questionSection").find(".answerInformation").find(".replyInfo").find(".answerRepliesMarker").html(theResponse + "&nbsp;replies");  
     		});*/
@@ -260,7 +260,7 @@
     	if ($(event.target).is(".confirmReplyDelete") && authenticatedUser[0] === "true") { 
   		  	community.replyInterface.replyId = $(event.target).parent(".answerReplyLayout").find(".replyAnswerId").html();  
 
-    		$.post("../coderback/deletereplyserver.php", community.replyInterface).done(function(theResponse) {
+    		$.post("../Educacode/coderback/deletereplyserver.php", community.replyInterface).done(function(theResponse) {
   				$(event.target).parent(".answerReplyLayout").parent(".allReplyComposite").fadeOut(353);  
   				$(event.target).parent(".answerReplyLayout").parent(".allReplyComposite").parent(".builtAnswerReplies").parent(".questionSection").find(".answerInformation").find(".replyInfo").find(".answerRepliesMarker").html(theResponse + "&nbsp;replies");  
     		});
@@ -273,7 +273,7 @@
 	    		community.answerInterface.answerId = $(event.target).parent(".questionSection").find(".answerId").html();
     		}
 
-    		$.post("../coderback/deleteanswerserver.php", community.answerInterface).done(function(theResponse) { 
+    		$.post("../Educacode/coderback/deleteanswerserver.php", community.answerInterface).done(function(theResponse) { 
 	    		var questionAnswers = theResponse + "&nbsp;answers";
 
 	    		$(event.target).parent(".questionSection").parent("#questionAnswerSection").find(".questionSection").find(".questionInformation").find(".commentInfo").find(".allTheAnswersMarker").html(questionAnswers);
@@ -284,7 +284,7 @@
    		}
 
     	if ($(event.target).is(".confirmQuestionDelete") && authenticatedUser[0] === "true") {
-    		$.post("../coderback/deletequestionserver.php", community.questionInterface).done(function(theResponse) {
+    		$.post("../Educacode/coderback/deletequestionserver.php", community.questionInterface).done(function(theResponse) {
 	    		location.reload(true);
     		});
    		}
@@ -360,7 +360,7 @@
     		community.replyInterface.clapTableName = $(event.target).parent(".clapperDivision").parent(".answerInformation").parent(".answerReplyLayout").find(".replyClapperTable").html();
     		community.replyInterface.replyTableName = $(event.target).parent(".clapperDivision").parent(".answerInformation").parent(".answerReplyLayout").find(".replyAnswerTable").html();
 
-    		$.post("../coderback/clapreplyserver.php", community.replyInterface).done(function(theResponse) {
+    		$.post("../Educacode/coderback/clapreplyserver.php", community.replyInterface).done(function(theResponse) {
 				var useResponse = getResponseObject(theResponse);
 
 				if (useResponse[1] > 0
@@ -398,7 +398,7 @@
     			community.replyInterface.answerId = $(event.target).parent(".replyInfo").parent(".answerInformation").parent(".questionSection").find(".answerId").html();	
     			community.replyInterface.replyTableName = $(event.target).parent(".replyInfo").parent(".answerInformation").parent(".questionSection").find(".answerReplyTable").html();	
 
-    			$.post("../coderback/jsonanswerreplies.php", community.replyInterface).done(function(theResponse) {  
+    			$.post("../Educacode/coderback/jsonanswerreplies.php", community.replyInterface).done(function(theResponse) {  
     				useResponse = getResponseObject(theResponse);
 
     				$(event.target).parent(".replyInfo").parent(".answerInformation").parent(".questionSection").find(".builtAnswerReplies").html(buildReplyInterface(useResponse[1]));
@@ -420,7 +420,7 @@
 	    			community.replyInterface.replyTableName = $(event.target).parent(".replyAnswerDivision").parent(".questionSection").find(".answerReplyTable").html();
 				}
 
-    			$.post("../coderback/replyanswerserver.php", community.replyInterface).done(function(theResponse) {
+    			$.post("../Educacode/coderback/replyanswerserver.php", community.replyInterface).done(function(theResponse) {
     				var useResponse = getResponseObject(theResponse);
 
 					$(event.target).parent(".replyAnswerDivision").find(".prepareReplyLayout").html(""); 
@@ -441,7 +441,7 @@
     	}
     	
     	if ($(event.target).is(".clapQuestionImage") && authenticatedUser[0] === "true") {                                                
-    		$.post("../coderback/clapquestionserver.php", community.questionInterface).done(function(theResponse) {                                                 
+    		$.post("../Educacode/coderback/clapquestionserver.php", community.questionInterface).done(function(theResponse) {                                                 
     			var fieldResponse = getResponseObject(theResponse);
 
     			community.questionInterface.userClapped = fieldResponse[0];                                         
@@ -524,7 +524,7 @@
     			community.answerInterface.clapTableName = $(event.target).parent(".clapperDivision").parent(".answerInformation").parent(".questionSection").find(".answerClapTable").html();
 			}
 
-    		$.post("../coderback/clapanswerserver.php", community.answerInterface).done(function(theResponse) { 
+    		$.post("../Educacode/coderback/clapanswerserver.php", community.answerInterface).done(function(theResponse) { 
     			var useResponse = getResponseObject(theResponse);
 
 				if (useResponse[1] > 0
@@ -719,13 +719,13 @@
 	$("#postQuestionNow").click(function() {                                                   
 		if (canSubmitPreparedQuestion) {                                             
 			if (isEditQuestionProcess) {
-				$.post("../coderback/editquestionserver.php", community.questionInterface).done(function(theResponse) {                                         
+				$.post("../Educacode/coderback/editquestionserver.php", community.questionInterface).done(function(theResponse) {                                         
 					var useResponse = getResponseObject(theResponse);
 					postQuestionResponseProcessor(useResponse);
 				});                                              
 			}
 			else {
-				$.post("../coderback/askquestionserver.php", community.questionInterface).done(function(theResponse) {                                         
+				$.post("../Educacode/coderback/askquestionserver.php", community.questionInterface).done(function(theResponse) {                                         
 					var useResponse = getResponseObject(theResponse);
 					postQuestionResponseProcessor(useResponse);
 				});                                              
@@ -1248,7 +1248,7 @@
 	}
 
     var createCommunalInterface = function() {                                
-    	$.post("../coderback/jsonquestioncomponents.php", community.questionInterface).done(function(theResponse) {                                             
+    	$.post("../Educacode/coderback/jsonquestioncomponents.php", community.questionInterface).done(function(theResponse) {                                             
     		var useResponse = getResponseObject(theResponse);
 			$("#educacodeCommunityQuestions").slideUp(353);
 			community.questionInterface.userClapped = useResponse[0];

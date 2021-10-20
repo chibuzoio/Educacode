@@ -4,8 +4,8 @@
  * Database login details
  */  
 define("HOST", "localhost");     // The host you want to connect to.
-define("USER", "CHIBUZO");    // The database username. 
-define("PASSWORD", "solutionsmith");    // The database password. 
+define("USER", "root");    // The database username. 
+define("PASSWORD", "");    // The database password. 
 define("DATABASE", "educacode");    // The database name.
 define("CHARSET", "utf8");         
 define("DEFAULT_ROLE", "member");            

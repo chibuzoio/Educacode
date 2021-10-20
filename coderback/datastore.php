@@ -1,6 +1,6 @@
 <?php         
 
-require_once("../coderback/configuration.php");                 
+require_once("../Educacode/coderback/configuration.php");                 
 
 class DataStore {                                    
 	

@@ -1,8 +1,8 @@
 <?php                  
 
-require_once("../coderback/utility.php");                                                     
-require_once("../coderback/datamanager.php");                          
-require_once("../coderback/databasemanager.php");                          
+require_once("../Educacode/coderback/utility.php");                                                     
+require_once("../Educacode/coderback/datamanager.php");                          
+require_once("../Educacode/coderback/databasemanager.php");                          
 
 $projectTitle = isset($_POST['title']) ? Utility::makeInputSafe($_POST['title']) : "";                     
 $projectSubtitle = isset($_POST['subtitle']) ? Utility::makeInputSafe($_POST['subtitle']) : "";                 
