@@ -1,7 +1,7 @@
 <?php              
 
-require_once("../Educacode/coderback/datastore.php");                                 
-require_once("../Educacode/coderback/configuration.php");                                 
+require_once("../coderback/datastore.php");                                 
+require_once("../coderback/configuration.php");                                 
 
 class ProjectResourcesInitializer {                                          
 	private $pdo;                                          

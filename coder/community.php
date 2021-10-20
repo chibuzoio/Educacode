@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../Educacode/coderback/store.php");                        
-    require_once("../Educacode/coderback/utility.php");                        
+    require_once("../coderback/store.php");                        
+    require_once("../coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                            
 
@@ -9,14 +9,14 @@
             
     $store->setPageTitle("Educacode Community");                         
 
-    require_once("../Educacode/coderback/includeheader.php");                                
+    require_once("../coderback/includeheader.php");                                
 
 ?>                                    
 
     <div id="communityWindow" class="col-xs-12 communityWindow whiteBody">                                  
     	<div id="communityDivision" class="communityDivision col-xs-9">
     		<div id="majorAdvertLayout" class="majorAdvertLayout">
-    			<img class="advertisement" src="image/advertise.jpg">
+    			<img class="advertisement" src="coder/image/advertise.jpg">
     		</div>                                     
 
             <!-- ========================================================== -->
@@ -27,7 +27,7 @@
 
     		<div id="questionAnswerSection" class="questionAnswerSection hideComponent">
     			<div class="col-xs-1">
-    				<img class="memberQuestionPicture" src="image/profile.jpg">    			                   
+    				<img class="memberQuestionPicture" src="coder/image/profile.jpg">    			                   
     			</div>                                 
     			<div id="questionSection" class="questionSection col-xs-11">
     				<div class="questionTitle headerColor">
@@ -42,19 +42,19 @@
     				</div>
     				<div class="questionInformation">
 	    				<div title="clap" class="clapperDivision col-xs-1">
-	    					<img class="questionClapper" src="image/notclapped.png">
+	    					<img class="questionClapper" src="coder/image/notclapped.png">
 	    				</div>
     					<div class="questionClapperInfo col-xs-2 semiBlurColor">65&nbsp;claps</div>                                               
     					<!-- toggle commentIcon-on fa-comment with commentIcon-off fa-comment-o -->
                         <div title="clap" class="clapperDivision col-xs-1">
-                            <img class="questionClapper" src="image/commented.png">
+                            <img class="questionClapper" src="coder/image/commented.png">
                         </div>
     					<div class="commentInfo semiBlurColor col-xs-2">65&nbsp;answers</div>
     				</div>                                             
     			</div>                                   
     			<div class="separateQuestion col-xs-12"></div>
     			<div class="col-xs-1">
-    				<img class="memberAnswerPicture" src="image/commember.jpg">    			                   
+    				<img class="memberAnswerPicture" src="coder/image/commember.jpg">    			                   
     			</div>                                 
     			<div class="questionSection col-xs-11">                                            
     				<div class="questionAnswererAsker blurColor col-xs-6">Answer By Lenon Brown</div>                                        
@@ -66,12 +66,12 @@
     				</div>
     				<div class="answerInformation">
 	    				<div title="clap" class="clapperDivision col-xs-1">
-	    					<img class="answerClapper" src="image/notclapped.png">
+	    					<img class="answerClapper" src="coder/image/notclapped.png">
 	    				</div>
     					<div class="answerClapperInfo col-xs-2 semiBlurColor">65&nbsp;claps</div>                                               
     					<!-- toggle commentIcon-on fa-comment with commentIcon-off fa-comment-o -->
                         <div title="clap" class="clapperDivision col-xs-1">
-                            <img class="answerClapper" src="image/commented.png">
+                            <img class="answerClapper" src="coder/image/commented.png">
                         </div>
     					<div class="replyInfo semiBlurColor col-xs-2">65&nbsp;replies</div>
     				</div>                                             
@@ -85,7 +85,7 @@
 
     			<div class="replyMargin col-xs-1"></div>
 				<div class="col-xs-1">
-    				<img class="memberAnswerPicture" src="image/replier.jpg">    			                   
+    				<img class="memberAnswerPicture" src="coder/image/replier.jpg">    			                   
     			</div>                                 
     			<div class="questionSection col-xs-10">                                            
     				<div class="questionAnswererAsker blurColor col-xs-6">Reply By John Castro</div>                                        
@@ -97,7 +97,7 @@
     				</div>                                   
     				<div class="answerInformation">
 	    				<div title="clap" class="clapperDivision col-xs-1">
-	    					<img class="answerClapper" src="image/notclapped.png">
+	    					<img class="answerClapper" src="coder/image/notclapped.png">
 	    				</div>
     					<div class="answerClapperInfo col-xs-2 semiBlurColor">65&nbsp;claps</div>                              
     				</div>                                             
@@ -112,7 +112,7 @@
 
 
 				<div class="col-xs-1">
-    				<img class="memberAnswerPicture" src="image/answerer.jpg">    			                   
+    				<img class="memberAnswerPicture" src="coder/image/answerer.jpg">    			                   
     			</div>                                 
     			<div class="questionSection col-xs-11">                                            
     				<div class="questionAnswererAsker blurColor col-xs-6">Answer By Louis Tizer</div>                                        
@@ -124,7 +124,7 @@
     				</div>
     				<div class="answerInformation">
 	    				<div title="clap" class="clapperDivision col-xs-1">
-	    					<img class="answerClapper" src="image/notclapped.png">
+	    					<img class="answerClapper" src="coder/image/notclapped.png">
 	    				</div>
     					<div class="answerClapperInfo col-xs-2 semiBlurColor">65&nbsp;claps</div>                                               
     					<!-- toggle commentIcon-on fa-comment with commentIcon-off fa-comment-o -->
@@ -220,7 +220,7 @@
 
 <?php 
 
-    require_once("../Educacode/coderback/floatfooter.php");                                
+    require_once("../coderback/floatfooter.php");                                
 
 ?>                                     
 
@@ -228,6 +228,6 @@
 
 <?php                         
 
-    require_once("../Educacode/coderback/includefooter.php");                  
+    require_once("../coderback/includefooter.php");                  
 
 

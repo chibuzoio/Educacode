@@ -1,7 +1,7 @@
 <?php              
 
-require_once("../Educacode/coderback/datamanager.php");                 
-require_once("../Educacode/coderback/projectresourcesinitializer.php");                 
+require_once("../coderback/datamanager.php");                 
+require_once("../coderback/projectresourcesinitializer.php");                 
 
 $dataManager = new DataManager();                                  
 

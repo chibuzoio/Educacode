@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../Educacode/coderback/store.php");                        
-    require_once("../Educacode/coderback/utility.php");                        
+    require_once("../coderback/store.php");                        
+    require_once("../coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                               
 
@@ -10,7 +10,7 @@
     $store->setBodyID("");                     
     $store->setPageTitle("Admin Basic Value");                         
 
-    require_once("../Educacode/coderback/includeheader.php");                                
+    require_once("../coderback/includeheader.php");                                
 
 ?>                          
 
@@ -18,7 +18,7 @@
         <div class="adminBasicValue">
             <div class="businessControlCost">
                 <div class="headerColor businessControlCostHeader">Business Control Cost</div>                          
-                <form action="../Educacode/coderback/businesscontrolcserver.php" method="post">                      
+                <form action="../coderback/businesscontrolcserver.php" method="post">                      
                     <input type="number" name="businessControlCost" placeholder="businessControlCost" class="padLeftOnly baseInput">
                     <input type="number" name="businessSearchEOCost" placeholder="businessSearchEOCost" class="padLeftOnly baseInput">
                     <input type="number" name="businessProductDCost" placeholder="businessProductDCost" class="padLeftOnly extremeRightInput">
@@ -33,7 +33,7 @@
             </div>                            
             <div class="commerceControlCost">
                 <div class="headerColor businessControlCostHeader">Commerce Control Cost</div>                          
-                <form action="../Educacode/coderback/commercecontrolcserver.php" method="post">                      
+                <form action="../coderback/commercecontrolcserver.php" method="post">                      
                     <input type="number" name="commerceControlCost" placeholder="commerceControlCost" class="padLeftOnly baseInput">
                     <input type="number" name="commerceSearchEOCost" placeholder="commerceSearchEOCost" class="padLeftOnly baseInput">
                     <input type="number" name="commerceProductDCost" placeholder="commerceProductDCost" class="padLeftOnly extremeRightInput">
@@ -48,7 +48,7 @@
             </div>                            
             <div class="commerceControlCost">
                 <div class="headerColor businessControlCostHeader">Office Control Cost</div>                          
-                <form action="../Educacode/coderback/officecontrolcserver.php" method="post">                      
+                <form action="../coderback/officecontrolcserver.php" method="post">                      
                     <input type="number" name="officeControlCost" placeholder="officeControlCost" class="padLeftOnly baseInput">
                     <input type="number" name="officeSearchEOCost" placeholder="officeSearchEOCost" class="padLeftOnly baseInput">
                     <input type="number" name="officeServicesDCost" placeholder="officeServicesDCost" class="padLeftOnly extremeRightInput">
@@ -62,7 +62,7 @@
             </div>                            
              <div class="commerceControlCost">
                 <div class="headerColor businessControlCostHeader">Office Control Cost</div>                          
-                <form action="../Educacode/coderback/schoolcontrolcserver.php" method="post">                      
+                <form action="../coderback/schoolcontrolcserver.php" method="post">                      
                     <input type="number" name="schoolControlCost" placeholder="schoolControlCost" class="padLeftOnly baseInput">
                     <input type="number" name="schoolSearchEOCost" placeholder="schoolSearchEOCost" class="padLeftOnly baseInput">
                     <input type="number" name="schoolDescriptiveUICost" placeholder="schoolDescriptiveUICost" class="padLeftOnly extremeRightInput">
@@ -79,13 +79,13 @@
         </div>
 <?php 
 
-    require_once("../Educacode/coderback/floatfooter.php");                                
+    require_once("../coderback/floatfooter.php");                                
 ?>                                     
 
     </div>                             
 
 <?php                         
 
-    require_once("../Educacode/coderback/includefooter.php");                  
+    require_once("../coderback/includefooter.php");                  
 
 

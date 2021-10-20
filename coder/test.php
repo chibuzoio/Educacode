@@ -21,11 +21,11 @@ if ($booleanVal) {
 	<div class="askAnswerTime blurColor col-xs-6">2017-08-10</div>
 	<div class="questionContent baseColor">ahf fdhaf  fasflas hfjfk dsalfjksajkf ljalsj fklsajfkl ajklfjklaj kljaslkjf klajf ljklfjlka</div>
 	<div class="answerInformation">
-		<div title="clap" class="clapperDivision col-xs-1"><img class="answerClapImage" src="image/clapped.png"></div>
+		<div title="clap" class="clapperDivision col-xs-1"><img class="answerClapImage" src="coder/image/clapped.png"></div>
 		<div class="answerClapperInfo col-xs-2 semiBlurColor">
 			<div class="answerClapsMarker answerClaps-on">1&nbsp;claps</div>
 		</div>
-		<div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="image/comment.png"></div>
+		<div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="coder/image/comment.png"></div>
 		<div class="replyInfo semiBlurColor col-xs-2">
 			<div class="answerRepliesMarker answerReplies-on">1&nbsp;replies</div>
 		</div>
@@ -50,13 +50,13 @@ if ($booleanVal) {
 	</div>
 	<div class="builtAnswerReplies hideComponent" style="display: block; opacity: 0;">
 		<div class="allReplyComposite col-xs-12">
-			<div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div>
+			<div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div>
 			<div class="answerReplyLayout col-xs-11">
 				<div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div>
 				<div class="askAnswerTime blurColor col-xs-6">2017-08-10</div>
 				<div class="questionContent baseColor">klsdfjasf ajsdklf aks fhkasf hkajshf ajshfk hkfj hakjh fkjashk hfka</div>
 				<div class="answerInformation">
-					<div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/notclapped.png"></div>
+					<div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/notclapped.png"></div>
 					<div class="answerClapperInfo col-xs-2 semiBlurColor">
 						<div class="answerClaps-off">0&nbsp;claps</div>
 					</div>
@@ -66,13 +66,13 @@ if ($booleanVal) {
 			</div>
 		</div>
 		<div class="allReplyComposite col-xs-12">
-			<div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div>
+			<div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div>
 			<div class="answerReplyLayout col-xs-11">
 				<div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div>
 				<div class="askAnswerTime blurColor col-xs-6">2017-08-12</div>
 				<div class="questionContent baseColor">klflkaf jsafjkl ajfkajkjdlksa lkjlks jlfksajlfkjfksskljfs a sfkajfls al fajfkla</div>
 				<div class="answerInformation">
-					<div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/notclapped.png"></div>
+					<div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/notclapped.png"></div>
 					<div class="answerClapperInfo col-xs-2 semiBlurColor">
 						<div class="answerClaps-off">0&nbsp;claps</div>
 					</div>

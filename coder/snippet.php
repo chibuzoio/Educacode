@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../Educacode/coderback/store.php");                        
-    require_once("../Educacode/coderback/utility.php");                        
+    require_once("../coderback/store.php");                        
+    require_once("../coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                                      
 
@@ -10,19 +10,19 @@
     $store->setBodyID("");                     
     $store->setPageTitle("Snippet");                         
 
-    require_once("../Educacode/coderback/includeheader.php");                                
+    require_once("../coderback/includeheader.php");                                
 
 ?>          
 
 <?php 
 
-    require_once("../Educacode/coderback/floatfooter.php");                                
+    require_once("../coderback/floatfooter.php");                                
 ?>                                     
 
     </div>                             
 
 <?php                         
 
-    require_once("../Educacode/coderback/includefooter.php");                  
+    require_once("../coderback/includefooter.php");                  
 
 

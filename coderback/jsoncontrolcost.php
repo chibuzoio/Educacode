@@ -1,7 +1,7 @@
 <?php           
 
-require_once("../Educacode/coderback/utility.php");                 
-require_once("../Educacode/coderback/datastore.php");                 
+require_once("../coderback/utility.php");                 
+require_once("../coderback/datastore.php");                 
 
 // $now = new DateTime();         
 

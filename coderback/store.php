@@ -1,7 +1,7 @@
 <?php                          
 
-require_once("../Educacode/coderback/utility.php");                    
-require_once("../Educacode/coderback/datamanager.php");                    
+require_once("../coderback/utility.php");                    
+require_once("../coderback/datamanager.php");                    
       
 class Store {                      
 	

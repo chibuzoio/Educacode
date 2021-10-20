@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../Educacode/coderback/store.php");                        
-    require_once("../Educacode/coderback/utility.php");                        
+    require_once("../coderback/store.php");                        
+    require_once("../coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                                  
 
@@ -10,7 +10,7 @@
     $store->setBodyID("");                     
     $store->setPageTitle("About Us");                         
 
-    require_once("../Educacode/coderback/includeheader.php");                                
+    require_once("../coderback/includeheader.php");                                
 
 ?>                          
     
@@ -20,7 +20,7 @@
 
     <div id="communityDivision" class="communityDivision col-xs-9">
             <div id="majorAdvertLayout" class="majorAdvertLayout" style="display: none;">
-                <img class="advertisement" src="image/advertise.jpg">
+                <img class="advertisement" src="coder/image/advertise.jpg">
             </div>                                     
 
             <!-- ========================================================== -->
@@ -47,7 +47,7 @@
             <!-- ============================================================ -->
 
             <div id="questionAnswerSection" class="questionAnswerSection hideComponent" style="display: block;">
-                <div class="col-xs-1"><img class="memberQuestionPicture" src="image/SC150128810300027.jpg"></div>
+                <div class="col-xs-1"><img class="memberQuestionPicture" src="coder/image/SC150128810300027.jpg"></div>
                 <div class="questionSection col-xs-11">
                     <div class="questionTitle headerColor">Kelejdlasjf Affkal Fjksafjlajf Ajf Kajf Klaj Flkajfsalkja Lksfj Klsajf Klajf Lkjaflk Ajsfk Jsal Kffsdaf</div>
                     <div class="questionAnswererAsker blurColor col-xs-6">Question By Smith Chibuzo</div>
@@ -56,17 +56,17 @@
                     <div class="confirmQuestionEdit confirmDelete confirmEdit hideComponent">Edit Question</div>
                     <div class="confirmQuestionDelete confirmDelete hideComponent">Delete Question</div>
                     <div class="questionInformation">
-                        <div title="clap" class="clapperDivision col-xs-1"><img class="clapQuestionImage" src="image/notclapped.png"></div>
+                        <div title="clap" class="clapperDivision col-xs-1"><img class="clapQuestionImage" src="coder/image/notclapped.png"></div>
                         <div class="questionClapperInfo col-xs-2 semiBlurColor">
                             <div class="allTheClapsMarker allTheClaps-off">0&nbsp;claps</div>
                         </div>
-                        <div title="answer" class="answerDivision col-xs-1"><img class="questionAnswerImage" src="image/comment.png"></div>
+                        <div title="answer" class="answerDivision col-xs-1"><img class="questionAnswerImage" src="coder/image/comment.png"></div>
                         <div class="commentInfo semiBlurColor col-xs-2">
                             <div class="allTheAnswersMarker allTheAnswers-on">3&nbsp;answers</div>
                         </div>
                         <div class="controlDivision ">
-                            <div title="Edit Question" class="editControlDivision"><img class="editReplyImage editQuestionControl" src="image/edit.png"></div>
-                            <div title="Delete Question" class="deleteControlDivision"><img class="deleteReplyImage deleteQuestionControl" src="image/delete.png"></div>
+                            <div title="Edit Question" class="editControlDivision"><img class="editReplyImage editQuestionControl" src="coder/image/edit.png"></div>
+                            <div title="Delete Question" class="deleteControlDivision"><img class="deleteReplyImage deleteQuestionControl" src="coder/image/delete.png"></div>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
 
 
 
-<div class="col-xs-1"><img class="memberQuestionPicture" src="image/SC150128810300027.jpg"></div>
+<div class="col-xs-1"><img class="memberQuestionPicture" src="coder/image/SC150128810300027.jpg"></div>
 <div class="questionSection col-xs-11">
     <div class="questionTitle headerColor">Who Are Wai To I Don't Know</div>
     <div class="questionAnswererAsker blurColor col-xs-6">Question By Smith Chibuzo</div>
@@ -169,24 +169,24 @@
     <div class="confirmQuestionEdit confirmDelete confirmEdit hideComponent">Edit Question</div>
     <div class="confirmQuestionDelete confirmDelete">Delete&nbsp;Question</div>
     <div class="questionInformation">
-        <div title="clap" class="clapperDivision col-xs-1"><img class="clapQuestionImage" src="image/clapped.png"></div>
+        <div title="clap" class="clapperDivision col-xs-1"><img class="clapQuestionImage" src="coder/image/clapped.png"></div>
         <div class="questionClapperInfo col-xs-2 semiBlurColor">
             <div class="allTheClapsMarker allTheClaps-on">1&nbsp;claps</div>
         </div>
-        <div title="answer" class="answerDivision col-xs-1"><img class="questionAnswerImage" src="image/comment.png"></div>
+        <div title="answer" class="answerDivision col-xs-1"><img class="questionAnswerImage" src="coder/image/comment.png"></div>
         <div class="commentInfo semiBlurColor col-xs-2">
             <div class="allTheAnswersMarker allTheAnswers-on">3&nbsp;answers</div>
         </div>
         <div class="controlDivision ">
-            <div title="Edit Question" class="editControlDivision"><img class="editReplyImage editQuestionControl" src="image/edit.png"></div>
-            <div title="Delete Question" class="deleteControlDivision"><img class="deleteReplyImage deleteQuestionControl" src="image/delete.png"></div>
+            <div title="Edit Question" class="editControlDivision"><img class="editReplyImage editQuestionControl" src="coder/image/edit.png"></div>
+            <div title="Delete Question" class="deleteControlDivision"><img class="deleteReplyImage deleteQuestionControl" src="coder/image/delete.png"></div>
         </div>
     </div>
 </div>
 
 <div class="separateQuestion col-xs-12"></div>
 
-<div class="col-xs-1"><img class="memberAnswerPicture" src="image/SC150128810300027.jpg"></div>
+<div class="col-xs-1"><img class="memberAnswerPicture" src="coder/image/SC150128810300027.jpg"></div>
 <div class="questionSection col-xs-11">
     <div class="questionAnswererAsker blurColor col-xs-6">Answer By Smith Chibuzo</div>
     <div class="askAnswerTime blurColor col-xs-6">2017-08-29</div>
@@ -194,17 +194,17 @@
     <div class="confirmAnswerEdit confirmDelete confirmEdit hideComponent">Edit Answer</div>
     <div class="confirmAnswerDelete confirmDelete">Delete&nbsp;Answer</div>
     <div class="answerInformation">
-        <div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="image/clapped.png"></div>
+        <div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="coder/image/clapped.png"></div>
         <div class="answerClapperInfo col-xs-2 semiBlurColor">
             <div class="answerClapsMarker answerClaps-on">1&nbsp;claps</div>
         </div>
-        <div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="image/comment.png"></div>
+        <div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="coder/image/comment.png"></div>
         <div class="replyInfo semiBlurColor col-xs-2">
             <div class="answerRepliesMarker answerReplies-on">1&nbsp;replies</div>
         </div>
         <div class="controlDivision ">
-            <div title="Edit Answer" class="editControlDivision"><img class="editReplyImage editAnswerControl" src="image/edit.png"></div>
-            <div title="Delete Answer" class="deleteControlDivision"><img class="deleteReplyImage deleteAnswerControl" src="image/delete.png"></div>
+            <div title="Edit Answer" class="editControlDivision"><img class="editReplyImage editAnswerControl" src="coder/image/edit.png"></div>
+            <div title="Delete Answer" class="deleteControlDivision"><img class="deleteReplyImage deleteAnswerControl" src="coder/image/delete.png"></div>
         </div>
     </div>
     <div class="answerClapTable hideComponent">clap150403716600027</div>
@@ -229,7 +229,7 @@
 
 <div class="builtAnswerReplies hideComponent" style="display: block;">
     <div class="allReplyComposite col-xs-12">
-        <div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div>
+        <div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div>
         <div class="answerReplyLayout col-xs-11">
             <div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div>
             <div class="askAnswerTime blurColor col-xs-6">2017-08-29</div>
@@ -237,13 +237,13 @@
             <div class="confirmReplyEdit confirmDelete confirmEdit hideComponent">Edit Reply</div>
             <div class="confirmReplyDelete confirmDelete">Delete&nbsp;Reply</div>
             <div class="answerInformation">
-                <div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/clapped.png"></div>
+                <div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/clapped.png"></div>
                 <div class="answerClapperInfo col-xs-2 semiBlurColor">
                     <div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div>
                 </div>
                 <div class="controlDivision ">
-                    <div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="image/edit.png"></div>
-                    <div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="image/delete.png"></div>
+                    <div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="coder/image/edit.png"></div>
+                    <div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="coder/image/delete.png"></div>
                 </div>
             </div>
             <div class="replyClapperTable hideComponent">clap150403725800027</div>
@@ -253,7 +253,7 @@
     </div>
 </div>
 
-</div><div class="col-xs-1"><img class="memberAnswerPicture" src="image/SC150128810300027.jpg"></div><div class="questionSection col-xs-11"><div class="questionAnswererAsker blurColor col-xs-6">Answer By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">ufdsklfaskjflk asjlkfjalksfjalksj kljflk dsjadflk jslkdfj lksjflk jsakldfj lkasdjflks</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClapsMarker answerClaps-on">1&nbsp;claps</div></div><div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="image/comment.png"></div><div class="replyInfo semiBlurColor col-xs-2"><div class="answerRepliesMarker answerReplies-on">2&nbsp;replies</div></div><div class="controlDivision "><div title="Edit Answer" class="editControlDivision"><img class="editReplyImage editAnswerControl" src="image/edit.png"></div><div title="Delete Answer" class="deleteControlDivision"><img class="deleteReplyImage deleteAnswerControl" src="image/delete.png"></div></div></div><div class="answerClapTable hideComponent">clap150403718100027</div><div class="answerReplyTable hideComponent">reply150403718100027</div><div class="answerId hideComponent">2</div><div class="replyAnswerDivision hideComponent col-xs-12"><div class="prepareReplyLayout prepareQuestionLayoutBottom baseColor"></div><div class="postReplyControl"><div class="editControlButton">Edit</div><div class="boldControlButton replyFormatControls col-xs-2 baseColor">B</div><div class="paragraphControlButton replyFormatControls col-xs-2 baseColor">P</div><div class="replyFormatControls col-xs-2 baseColor"><u class="underlineControlButton">U</u></div><div class="breakControlButton replyBreakerControl col-xs-2 baseColor">BR</div><div class="codeControlButton replyCoderControl col-xs-2 baseColor">{&nbsp;}</div><div class="controlButtonStop"></div></div><textarea class="prepareReplyTextarea baseColor" spellcheck="false"></textarea><div class="postReplyError hideComponent"></div><div class="postReplyNow postReplyNow-off">Post Reply</div></div><div class="builtAnswerReplies hideComponent" style="display: block;"><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">uiosdfau oifuoaslfk jsalkf jlkajf lkajlkf jalksjf lksajfl ksajlkf jlksaljlk</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403728700027</div><div class="replyAnswerTable hideComponent">reply150403718100027</div><div class="replyAnswerId hideComponent">1</div></div></div><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">ufsd udfa aslk fjlkajklf jkalsjf lasjf lkjaslkf jlakjf lkajlk dfjaksjf lksa</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403729700027</div><div class="replyAnswerTable hideComponent">reply150403718100027</div><div class="replyAnswerId hideComponent">2</div></div></div></div></div><div class="col-xs-1"><img class="memberAnswerPicture" src="image/SC150128810300027.jpg"></div><div class="questionSection col-xs-11"><div class="questionAnswererAsker blurColor col-xs-6">Answer By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">yuier w fasdlkfjlkaslkfj lkasjf lkasjlf kjaslk fjlkasjf lkasjflk ajslk fjlks</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClapsMarker answerClaps-on">1&nbsp;claps</div></div><div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="image/comment.png"></div><div class="replyInfo semiBlurColor col-xs-2"><div class="answerRepliesMarker answerReplies-on">2&nbsp;replies</div></div><div class="controlDivision "><div title="Edit Answer" class="editControlDivision"><img class="editReplyImage editAnswerControl" src="image/edit.png"></div><div title="Delete Answer" class="deleteControlDivision"><img class="deleteReplyImage deleteAnswerControl" src="image/delete.png"></div></div></div><div class="answerClapTable hideComponent">clap150403720400027</div><div class="answerReplyTable hideComponent">reply150403720400027</div><div class="answerId hideComponent">3</div><div class="replyAnswerDivision hideComponent col-xs-12"><div class="prepareReplyLayout prepareQuestionLayoutBottom baseColor"></div><div class="postReplyControl"><div class="editControlButton">Edit</div><div class="boldControlButton replyFormatControls col-xs-2 baseColor">B</div><div class="paragraphControlButton replyFormatControls col-xs-2 baseColor">P</div><div class="replyFormatControls col-xs-2 baseColor"><u class="underlineControlButton">U</u></div><div class="breakControlButton replyBreakerControl col-xs-2 baseColor">BR</div><div class="codeControlButton replyCoderControl col-xs-2 baseColor">{&nbsp;}</div><div class="controlButtonStop"></div></div><textarea class="prepareReplyTextarea baseColor" spellcheck="false"></textarea><div class="postReplyError hideComponent"></div><div class="postReplyNow postReplyNow-off">Post Reply</div></div><div class="builtAnswerReplies hideComponent" style="display: block;"><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">udsfalksjf lkajsklfj klsajklf ajsklfj klasjf klsajlf jslkajf lkasjflk sj lflksjafklajl aa ff fsafasf sfsaf</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403722100027</div><div class="replyAnswerTable hideComponent">reply150403720400027</div><div class="replyAnswerId hideComponent">1</div></div></div><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">ufoisdauf adlskfj lkjsaflkajslkf jlksaj lkjasflkjlksalk jaks jlkfjf ksjak</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403723300027</div><div class="replyAnswerTable hideComponent">reply150403720400027</div><div class="replyAnswerId hideComponent">2</div></div></div></div></div>
+</div><div class="col-xs-1"><img class="memberAnswerPicture" src="coder/image/SC150128810300027.jpg"></div><div class="questionSection col-xs-11"><div class="questionAnswererAsker blurColor col-xs-6">Answer By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">ufdsklfaskjflk asjlkfjalksfjalksj kljflk dsjadflk jslkdfj lksjflk jsakldfj lkasdjflks</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="coder/image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClapsMarker answerClaps-on">1&nbsp;claps</div></div><div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="coder/image/comment.png"></div><div class="replyInfo semiBlurColor col-xs-2"><div class="answerRepliesMarker answerReplies-on">2&nbsp;replies</div></div><div class="controlDivision "><div title="Edit Answer" class="editControlDivision"><img class="editReplyImage editAnswerControl" src="coder/image/edit.png"></div><div title="Delete Answer" class="deleteControlDivision"><img class="deleteReplyImage deleteAnswerControl" src="coder/image/delete.png"></div></div></div><div class="answerClapTable hideComponent">clap150403718100027</div><div class="answerReplyTable hideComponent">reply150403718100027</div><div class="answerId hideComponent">2</div><div class="replyAnswerDivision hideComponent col-xs-12"><div class="prepareReplyLayout prepareQuestionLayoutBottom baseColor"></div><div class="postReplyControl"><div class="editControlButton">Edit</div><div class="boldControlButton replyFormatControls col-xs-2 baseColor">B</div><div class="paragraphControlButton replyFormatControls col-xs-2 baseColor">P</div><div class="replyFormatControls col-xs-2 baseColor"><u class="underlineControlButton">U</u></div><div class="breakControlButton replyBreakerControl col-xs-2 baseColor">BR</div><div class="codeControlButton replyCoderControl col-xs-2 baseColor">{&nbsp;}</div><div class="controlButtonStop"></div></div><textarea class="prepareReplyTextarea baseColor" spellcheck="false"></textarea><div class="postReplyError hideComponent"></div><div class="postReplyNow postReplyNow-off">Post Reply</div></div><div class="builtAnswerReplies hideComponent" style="display: block;"><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">uiosdfau oifuoaslfk jsalkf jlkajf lkajlkf jalksjf lksajfl ksajlkf jlksaljlk</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="coder/image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="coder/image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403728700027</div><div class="replyAnswerTable hideComponent">reply150403718100027</div><div class="replyAnswerId hideComponent">1</div></div></div><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">ufsd udfa aslk fjlkajklf jkalsjf lasjf lkjaslkf jlakjf lkajlk dfjaksjf lksa</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="coder/image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="coder/image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403729700027</div><div class="replyAnswerTable hideComponent">reply150403718100027</div><div class="replyAnswerId hideComponent">2</div></div></div></div></div><div class="col-xs-1"><img class="memberAnswerPicture" src="coder/image/SC150128810300027.jpg"></div><div class="questionSection col-xs-11"><div class="questionAnswererAsker blurColor col-xs-6">Answer By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">yuier w fasdlkfjlkaslkfj lkasjf lkasjlf kjaslk fjlkasjf lkasjflk ajslk fjlks</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="coder/image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClapsMarker answerClaps-on">1&nbsp;claps</div></div><div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="coder/image/comment.png"></div><div class="replyInfo semiBlurColor col-xs-2"><div class="answerRepliesMarker answerReplies-on">2&nbsp;replies</div></div><div class="controlDivision "><div title="Edit Answer" class="editControlDivision"><img class="editReplyImage editAnswerControl" src="coder/image/edit.png"></div><div title="Delete Answer" class="deleteControlDivision"><img class="deleteReplyImage deleteAnswerControl" src="coder/image/delete.png"></div></div></div><div class="answerClapTable hideComponent">clap150403720400027</div><div class="answerReplyTable hideComponent">reply150403720400027</div><div class="answerId hideComponent">3</div><div class="replyAnswerDivision hideComponent col-xs-12"><div class="prepareReplyLayout prepareQuestionLayoutBottom baseColor"></div><div class="postReplyControl"><div class="editControlButton">Edit</div><div class="boldControlButton replyFormatControls col-xs-2 baseColor">B</div><div class="paragraphControlButton replyFormatControls col-xs-2 baseColor">P</div><div class="replyFormatControls col-xs-2 baseColor"><u class="underlineControlButton">U</u></div><div class="breakControlButton replyBreakerControl col-xs-2 baseColor">BR</div><div class="codeControlButton replyCoderControl col-xs-2 baseColor">{&nbsp;}</div><div class="controlButtonStop"></div></div><textarea class="prepareReplyTextarea baseColor" spellcheck="false"></textarea><div class="postReplyError hideComponent"></div><div class="postReplyNow postReplyNow-off">Post Reply</div></div><div class="builtAnswerReplies hideComponent" style="display: block;"><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">udsfalksjf lkajsklfj klsajklf ajsklfj klasjf klsajlf jslkajf lkasjflk sj lflksjafklajl aa ff fsafasf sfsaf</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="coder/image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="coder/image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403722100027</div><div class="replyAnswerTable hideComponent">reply150403720400027</div><div class="replyAnswerId hideComponent">1</div></div></div><div class="allReplyComposite col-xs-12"><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-11"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-29</div><div class="questionContent baseColor">ufoisdauf adlskfj lkjsaflkajslkf jlksaj lkjasflkjlksalk jaks jlkfjf ksjak</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/clapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="replyClapsMarker answerClaps-on">1&nbsp;claps</div></div><div class="controlDivision "><div title="Edit Reply" class="editControlDivision"><img class="editReplyImage editReplyControl" src="coder/image/edit.png"></div><div title="Delete Reply" class="deleteControlDivision"><img class="deleteReplyImage deleteReplyControl" src="coder/image/delete.png"></div></div></div><div class="replyClapperTable hideComponent">clap150403723300027</div><div class="replyAnswerTable hideComponent">reply150403720400027</div><div class="replyAnswerId hideComponent">2</div></div></div></div></div>
 
 
 
@@ -288,28 +288,28 @@
 <div class="confirmQuestionDelete">Click To Confirm</div>
 <div class="questionInformation">
     <div id="clapQuestionImage" title="clap" class="clapperDivision col-xs-1">
-        <img class="clapQuestionImage" src="image/notclapped.png">
+        <img class="clapQuestionImage" src="coder/image/notclapped.png">
     </div>
     <div class="questionClapperInfo col-xs-2 semiBlurColor">
         <div class="allTheClapsMarker allTheClaps-off">0&nbsp;claps</div>
     </div>
     <div id="answerQuestionImage" title="answer" class="answerDivision col-xs-1">
-        <img class="questionAnswerImage" src="image/comment.png">
+        <img class="questionAnswerImage" src="coder/image/comment.png">
     </div>
     <div class="commentInfo semiBlurColor col-xs-2">
         <div class="allTheAnswersMarker allTheAnswers-on">5&nbsp;answers</div>
     </div>
     <div class="controlDivision ">
         <div title="Edit Question" class="editControlDivision">
-            <img class="editReplyImage editQuestionControl" src="image/edit.png">
+            <img class="editReplyImage editQuestionControl" src="coder/image/edit.png">
         </div>
         <div title="Delete Question" class="deleteControlDivision">
-            <img class="deleteReplyImage deleteQuestionControl" src="image/delete.png">
+            <img class="deleteReplyImage deleteQuestionControl" src="coder/image/delete.png">
         </div>
     </div>
 </div>
 
-<div class="col-xs-1"><img class="memberQuestionPicture" src="image/SC150273267400029.jpg"></div>
+<div class="col-xs-1"><img class="memberQuestionPicture" src="coder/image/SC150273267400029.jpg"></div>
 <div id="questionSection" class="questionSection col-xs-11">
     <div class="questionTitle headerColor">Who Wrote The C Programming Language?</div>
     <div class="questionAnswererAsker blurColor col-xs-6">Question By Smith Chibuzo</div>
@@ -329,45 +329,45 @@
     </div>
 
     <div class="questionInformation">
-        <div id="clapQuestionImage" title="clap" class="clapperDivision col-xs-1"><img class="clapQuestionImage" src="image/notclapped.png"></div>
+        <div id="clapQuestionImage" title="clap" class="clapperDivision col-xs-1"><img class="clapQuestionImage" src="coder/image/notclapped.png"></div>
         <div class="questionClapperInfo col-xs-2 semiBlurColor">
             <div class="allTheClapsMarker allTheClaps-on">1&nbsp;claps</div>
         </div>
-        <div id="answerQuestionImage" title="answer" class="answerDivision col-xs-1"><img class="questionAnswerImage"src="image/comment.png"></div>
+        <div id="answerQuestionImage" title="answer" class="answerDivision col-xs-1"><img class="questionAnswerImage"src="coder/image/comment.png"></div>
         <div class="commentInfo semiBlurColor col-xs-2">
             <div class="allTheAnswersMarker allTheAnswers-on">1&nbsp;answers</div>
         </div>
         <div class="controlDivision">
             <div title="Edit Reply" class="editControlDivision">
-                <img class="editReplyImage" src="image/edit.png">
+                <img class="editReplyImage" src="coder/image/edit.png">
             </div>
             <div title="Delete Reply" class="deleteControlDivision">
-                <img class="deleteReplyImage" src="image/delete.png">
+                <img class="deleteReplyImage" src="coder/image/delete.png">
             </div>
         </div>
     </div>
 </div>
 <div class="separateQuestion col-xs-12"></div>
-<div class="col-xs-1"><img class="memberAnswerPicture" src="image/SC150273267400029.jpg"></div>
+<div class="col-xs-1"><img class="memberAnswerPicture" src="coder/image/SC150273267400029.jpg"></div>
 <div class="questionSection col-xs-11">
     <div class="questionAnswererAsker blurColor col-xs-6">Answer By Smith Chibuzo</div>
     <div class="askAnswerTime blurColor col-xs-6">2017-08-14</div>
     <div class="questionContent baseColor">The author of C programming language is Dennis Ritchie. :-)</div>
     <div class="answerInformation">
-        <div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="image/notclapped.png"></div>
+        <div title="clap" class="clapperDivision col-xs-1"><img class="clapAnswerImage" src="coder/image/notclapped.png"></div>
         <div class="answerClapperInfo col-xs-2 semiBlurColor">
             <div class="answerClapsMarker answerClaps-on">1&nbsp;claps</div>
         </div>
-        <div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="image/comment.png"></div>
+        <div title="reply" class="clapperDivision col-xs-1"><img class="answerReplyImage" src="coder/image/comment.png"></div>
         <div class="replyInfo semiBlurColor col-xs-2">
             <div class="answerRepliesMarker answerReplies-on">1&nbsp;replies</div>
         </div>
         <div class="controlDivision">
             <div title="Edit Reply" class="editControlDivision">
-                <img class="editReplyImage" src="image/edit.png">
+                <img class="editReplyImage" src="coder/image/edit.png">
             </div>
             <div title="Delete Reply" class="deleteControlDivision">
-                <img class="deleteReplyImage" src="image/delete.png">
+                <img class="deleteReplyImage" src="coder/image/delete.png">
             </div>
         </div>
     </div>
@@ -404,7 +404,7 @@
 
             <div class="replyMargin col-xs-1"></div>
             <div class="col-xs-1">
-                <img class="replyProfilePicture" src="image/SC150128810300027.jpg">
+                <img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg">
             </div>
             <div class="answerReplyLayout col-xs-10">
                 <div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div>
@@ -412,17 +412,17 @@
                 <div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div>
                 <div class="answerInformation">
                     <div title="clap" class="clapperDivision col-xs-1">
-                        <img class="replyClapperImage" src="image/notclapped.png">
+                        <img class="replyClapperImage" src="coder/image/notclapped.png">
                     </div>
                     <div class="answerClapperInfo col-xs-2 semiBlurColor">
                         <div class="answerClaps-off">0&nbsp;claps</div>
                     </div>
                     <div class="controlDivision">
                         <div title="Edit Reply" class="editControlDivision">
-                            <img class="editReplyImage" src="image/edit.png">
+                            <img class="editReplyImage" src="coder/image/edit.png">
                         </div>
                         <div title="Delete Reply" class="deleteControlDivision">
-                            <img class="deleteReplyImage" src="image/delete.png">
+                            <img class="deleteReplyImage" src="coder/image/delete.png">
                         </div>
                     </div>
                 </div>
@@ -435,7 +435,7 @@
 
 
 
-            <div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div><div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div><div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div><div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div>
+            <div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div><div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div><div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div><div class="replyMargin col-xs-1"></div><div class="col-xs-1"><img class="replyProfilePicture" src="coder/image/SC150128810300027.jpg"></div><div class="answerReplyLayout col-xs-10"><div class="answerReplier blurColor col-xs-6">Reply By Smith Chibuzo</div><div class="askAnswerTime blurColor col-xs-6">2017-08-11</div><div class="questionContent baseColor">gasdkjaljflsj asjfasjdfksa ajkf jakl fjlafjk lsjfklsjdklsjkl jasl jflksdfjsl</div><div class="answerInformation"><div title="clap" class="clapperDivision col-xs-1"><img class="replyClapperImage" src="coder/image/notclapped.png"></div><div class="answerClapperInfo col-xs-2 semiBlurColor"><div class="answerClaps-off">0&nbsp;claps</div></div></div><div class="replyClapperTable hideComponent">clap150243672800027</div><div class="replyAnswerId hideComponent">1</div></div>
 
         </div>
     </div>
@@ -465,13 +465,13 @@
          -->
 <?php 
 
-    require_once("../Educacode/coderback/floatfooter.php");                                
+    require_once("../coderback/floatfooter.php");                                
 ?>                                     
 
     </div>                             
 
 <?php                         
 
-    require_once("../Educacode/coderback/includefooter.php");                  
+    require_once("../coderback/includefooter.php");                  
 
 

@@ -1,9 +1,9 @@
 <?php                     
 
-require_once("../Educacode/coderback/datastore.php");                         
-require_once("../Educacode/coderback/tablemanager.php");                         
-require_once("../Educacode/coderback/projectmanager.php");                          
-require_once("../Educacode/coderback/communitygeneralmanager.php");                          
+require_once("../coderback/datastore.php");                         
+require_once("../coderback/tablemanager.php");                         
+require_once("../coderback/projectmanager.php");                          
+require_once("../coderback/communitygeneralmanager.php");                          
 
 class DatabaseManager {                          
 	private $pdo;                                         

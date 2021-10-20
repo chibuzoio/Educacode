@@ -18,18 +18,18 @@
 <div id="scrollDiv" class="col-xs-12 theBody whiteBody">                       
 
 	<div class="codingImage">
-        <img src="image/01.png" class="codeImageWidth firstCodeImage"/>
-        <img src="image/02.png" class="codeImageWidth secondCodeImage"/>
-        <img src="image/03.png" class="codeImageWidth thirdCodeImage"/>
-        <img src="image/04.png" class="codeImageWidth fourthCodeImage"/>
-        <img src="image/05.png" class="codeImageWidth fifthCodeImage"/>
-        <img src="image/06.png" class="codeImageWidth sixthCodeImage"/>
-        <img src="image/07.png" class="codeImageWidth seventhCodeImage"/>              
+        <img src="coder/image/01.png" class="codeImageWidth firstCodeImage"/>
+        <img src="coder/image/02.png" class="codeImageWidth secondCodeImage"/>
+        <img src="coder/image/03.png" class="codeImageWidth thirdCodeImage"/>
+        <img src="coder/image/04.png" class="codeImageWidth fourthCodeImage"/>
+        <img src="coder/image/05.png" class="codeImageWidth fifthCodeImage"/>
+        <img src="coder/image/06.png" class="codeImageWidth sixthCodeImage"/>
+        <img src="coder/image/07.png" class="codeImageWidth seventhCodeImage"/>              
 	</div>
 
 <div id="sliderDiv" class="sliderDiv">
 	
-    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="coder/js/jssor.slider.min.js"></script>
     <!-- use jssor.slider.debug.js instead for debug -->
     <script>
         jssor_1_slider_init = function() {
@@ -134,25 +134,25 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="image/11.jpg" />
+                <img data-u="image" src="coder/image/11.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="image/12.jpg" />
+                <img data-u="image" src="coder/image/12.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="image/13.jpg" />
+                <img data-u="image" src="coder/image/13.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="image/14.jpg" />
+                <img data-u="image" src="coder/image/14.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="image/15.jpg" />
+                <img data-u="image" src="coder/image/15.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="image/16.jpg" />
+                <img data-u="image" src="coder/image/16.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="image/17.jpg" />
+                <img data-u="image" src="coder/image/17.jpg" />
             </div>
             <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
         </div>

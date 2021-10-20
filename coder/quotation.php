@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../Educacode/coderback/store.php");                        
-    require_once("../Educacode/coderback/utility.php");                        
+    require_once("../coderback/store.php");                        
+    require_once("../coderback/utility.php");                        
 
     Utility::startEducacodeSession();                                                            
 
@@ -10,7 +10,7 @@
     $store->setBodyID("");                     
     $store->setPageTitle("Request Quotation");                         
 
-    require_once("../Educacode/coderback/includeheader.php");                                
+    require_once("../coderback/includeheader.php");                                
 
 ?>                          
             
