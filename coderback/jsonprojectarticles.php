@@ -1,7 +1,7 @@
 <?php                              
 
-require_once("../Educacode/coderback/datamanager.php");                               
-require_once("../Educacode/coderback/databasemanager.php");                               
+require_once(realpath(dirname(__FILE__) . "/../coderback/datamanager.php"));                               
+require_once(realpath(dirname(__FILE__) . "/../coderback/databasemanager.php"));                               
 
 $projectTitle = isset($_POST['title']) ? $_POST['title'] : "";                     
 

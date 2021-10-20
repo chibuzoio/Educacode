@@ -1,6 +1,6 @@
 <?php                          
 
-require_once("../Educacode/coderback/datastore.php");                           
+require_once(realpath(dirname(__FILE__) . "/../coderback/datastore.php"));                           
 
 $educacodeProjects = array();                             
 $query = "select * from educacodeprojects";                         

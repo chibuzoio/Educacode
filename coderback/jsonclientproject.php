@@ -1,6 +1,6 @@
 <?php                          
 
-require_once("../coderback/datastore.php");                           
+require_once(realpath(dirname(__FILE__) . "/../coderback/datastore.php"));                           
 
 $projectTable = "";                             
 $educacodeProjectArray = array();                             

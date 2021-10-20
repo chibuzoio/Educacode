@@ -1,6 +1,6 @@
 <?php         
 
-require_once("../coderback/configuration.php");                 
+require_once(realpath(dirname(__FILE__) . "/../coderback/configuration.php"));                 
 
 class DataStore {                                    
 	

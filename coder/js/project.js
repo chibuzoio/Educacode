@@ -11,7 +11,7 @@
 	var isUpArrowKeyPressed = false;                         
 	var isDownArrowKeyPressed = false;                         
 
-	$.getJSON('../Educacode/coderback/jsonfetchdefinition.php').done(function(theJson) {                     
+	$.getJSON('../coderback/jsonfetchdefinition.php').done(function(theJson) {                     
 		for (var i = 0; i < theJson.length; i++) {                                 
 			jsonDefinitions.push(theJson[i]);                      			
 		}                                                   

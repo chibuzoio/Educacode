@@ -13,11 +13,11 @@
 	var twoDimensionalArraySubarray = [];                                             
 	var isShortPasswordErrorVisible = false;                                                
 	var isPasswordRequiredErrorVisible = false;                                          
-	var getJSONMembers = $.getJSON('../Educacode/coderback/jsonregister.php');                                          
+	var getJSONMembers = $.getJSON('../coderback/jsonregister.php');                                          
 	var inputControlArray = ["firstName", "lastName", "gender", "email",                                            
 		"country", "state", "password", "passwordConfirm"];                                                         
 
-	$.getJSON("../Educacode/coderback/jsonauthenticateduser.php").done(function(theResponse) {                                               
+	$.getJSON("../coderback/jsonauthenticateduser.php").done(function(theResponse) {                                               
 		if (theResponse[0] === "true") {                                                        
 			if (theResponse[10] !== "") {                                              
 				$("#welcomeProfilePicture").html("<img class=\"welcomeProfilePicture\" src=\"image/" + theResponse[10] + "\">");                                                         
@@ -43,7 +43,7 @@
 	});                                                       
 	
 	$("#continueNextButton").click(function() {                                       
-		$.post("../Educacode/coderback/commitusernameserver.php", continueRegistration).done(function(theResponse) {                            
+		$.post("../coderback/commitusernameserver.php", continueRegistration).done(function(theResponse) {                            
 			$("#memberUserNameInput").val("");                                          
 			continueRegistration.userName = "";                                                     
 
@@ -93,7 +93,7 @@
 
 			$.ajax({                                       
 				type : "POST",                                           
-				url : "../Educacode/coderback/profilepictureserver.php",                                    
+				url : "../coderback/profilepictureserver.php",                                    
 				data : theFormData,                                          
 				processData : false,                                    
 				contentType : false                                              

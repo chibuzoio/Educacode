@@ -1,7 +1,7 @@
 <?php                     
 
-    require_once("../coderback/store.php");                        
-    require_once("../coderback/utility.php");                        
+    require_once(realpath(dirname(__FILE__) . "/../coderback/store.php"));                        
+    require_once(realpath(dirname(__FILE__) . "/../coderback/utility.php"));                        
 
     Utility::startEducacodeSession();                                                            
 
@@ -10,7 +10,7 @@
     $store->setBodyID("");                     
     $store->setPageTitle("Request Quotation");                         
 
-    require_once("../coderback/includeheader.php");                                
+    require_once(realpath(dirname(__FILE__) . "/../coderback/includeheader.php"));                                
 
 ?>                          
             
@@ -69,11 +69,11 @@
                     
                 <?php                           
 
-                    require_once("../Educacode/coderback/businessquoteform.php");                    
-                    require_once("../Educacode/coderback/churchquoteform.php");                
-                    require_once("../Educacode/coderback/companyquoteform.php");                
-                    require_once("../Educacode/coderback/ecommercequoteform.php");                
-                    require_once("../Educacode/coderback/schoolquoteform.php");                
+                    require_once(realpath(dirname(__FILE__) . "/../coderback/businessquoteform.php"));                    
+                    require_once(realpath(dirname(__FILE__) . "/../coderback/churchquoteform.php"));                
+                    require_once(realpath(dirname(__FILE__) . "/../coderback/companyquoteform.php"));                
+                    require_once(realpath(dirname(__FILE__) . "/../coderback/ecommercequoteform.php"));                
+                    require_once(realpath(dirname(__FILE__) . "/../coderback/schoolquoteform.php"));                
 
                 ?>                           
 
@@ -181,13 +181,13 @@
 
 <?php 
 
-    require_once("../Educacode/coderback/floatfooter.php");                                
+    require_once(realpath(dirname(__FILE__) . "/../coderback/floatfooter.php"));                                
 ?>                                     
 
     </div>                             
 
 <?php                         
 
-    require_once("../Educacode/coderback/includefooter.php");                  
+    require_once(realpath(dirname(__FILE__) . "/../coderback/includefooter.php"));                  
 
 

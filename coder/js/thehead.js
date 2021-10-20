@@ -27,13 +27,13 @@
 
 	projectTitleArticle.title = "";                                     
 
-	$.getJSON("../Educacode/coderback/jsongeneralsearch.php").done(function(theJson) {                           
+	$.getJSON("../coderback/jsongeneralsearch.php").done(function(theJson) {                           
 		for (var i = 0; i < theJson.length; i++) {                                 
 			jsonSearchComposite.push(theJson[i]);                      			
 		}                                  
 	});                            
 
-	var getJSONProjectSubmenus = $.getJSON('../Educacode/coderback/jsonprojectsubmenus.php').done(function(theResponse) {                                          
+	var getJSONProjectSubmenus = $.getJSON('../coderback/jsonprojectsubmenus.php').done(function(theResponse) {                                          
 		for (var i = 0; i < theResponse.length; i++) {                                       
 			switch (theResponse[i][1]) {                                    
 				case "ANDROID":                                         
@@ -73,7 +73,7 @@
 		}                                                            
 	});                                                               
 
-	$.getJSON("../Educacode/coderback/jsonauthenticateduser.php").done(function(theResponse) {                                                 
+	$.getJSON("../coderback/jsonauthenticateduser.php").done(function(theResponse) {                                                 
 		if (theResponse[0] === "true") {                                                        
 			if (theResponse[10] !== "") {                                              
 				$("#profilePictureComposite").html("<img class=\"profileButton\" src=\"image/" + theResponse[10] + "\">");                                                         
@@ -91,7 +91,7 @@
 		}                                                 
 	});                                                                     
 
-	var getJSONProjectTitles = $.getJSON('../Educacode/coderback/jsonprojecttitles.php');                       
+	var getJSONProjectTitles = $.getJSON('../coderback/jsonprojecttitles.php');                       
 
 	$("#profilePictureComposite").click(function() {                                                     
 		if ($("#accountDropdownInfo").is(":visible")) {                                                
@@ -470,7 +470,7 @@
 	}                                                                               
 
 	var processSubmenuMouseClickEvent = function() {                                                                                 
-		$.post("../Educacode/coderback/jsonprojectarticles.php", projectTitleArticle).done(function(theResponse) {                                      
+		$.post("../coderback/jsonprojectarticles.php", projectTitleArticle).done(function(theResponse) {                                      
 			var builtArticleSection = "";                                                 
 			var builtRequirementSection = "";                                                 
 			var projectCompositeArray = getResponseObject(theResponse);                                           

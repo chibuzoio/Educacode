@@ -1,7 +1,7 @@
 <?php           
 
-require_once("../coderback/utility.php");                 
-require_once("../coderback/datastore.php");                 
+require_once(realpath(dirname(__FILE__) . "/../coderback/utility.php"));                 
+require_once(realpath(dirname(__FILE__) . "/../coderback/datastore.php"));                 
 
 // $now = new DateTime();         
 

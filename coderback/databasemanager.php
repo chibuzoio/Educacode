@@ -1,9 +1,9 @@
 <?php                     
 
-require_once("../coderback/datastore.php");                         
-require_once("../coderback/tablemanager.php");                         
-require_once("../coderback/projectmanager.php");                          
-require_once("../coderback/communitygeneralmanager.php");                          
+require_once(realpath(dirname(__FILE__) . "/../coderback/datastore.php"));                         
+require_once(realpath(dirname(__FILE__) . "/../coderback/tablemanager.php"));                         
+require_once(realpath(dirname(__FILE__) . "/../coderback/projectmanager.php"));                          
+require_once(realpath(dirname(__FILE__) . "/../coderback/communitygeneralmanager.php"));                          
 
 class DatabaseManager {                          
 	private $pdo;                                         

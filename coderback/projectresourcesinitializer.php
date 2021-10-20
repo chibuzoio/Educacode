@@ -1,7 +1,7 @@
 <?php              
 
-require_once("../coderback/datastore.php");                                 
-require_once("../coderback/configuration.php");                                 
+require_once(realpath(dirname(__FILE__) . "/../coderback/datastore.php"));                                 
+require_once(realpath(dirname(__FILE__) . "/../coderback/configuration.php"));                                 
 
 class ProjectResourcesInitializer {                                          
 	private $pdo;                                          
