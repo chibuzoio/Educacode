@@ -1,0 +1,297 @@
+
+<!-- JS -->
+
+(function () {
+
+    var scrollHandle = 0,
+        scrollStep = 5,
+        parent = $(window);
+
+    //Start the scrolling process
+    $(".panner").on("mouseenter", function () {
+        var data = $(this).data('scrollModifier'),
+            direction = parseInt(data, 10);        
+
+        $(this).addClass('active');
+
+        startScrolling(direction, scrollStep);
+    });
+
+    //Kill the scrolling
+    $(".panner").on("mouseleave", function () {
+        stopScrolling();
+        $(this).removeClass('active');
+    });
+
+    //Actual handling of the scrolling
+    function startScrolling(modifier, step) {
+        if (scrollHandle === 0) {
+            scrollHandle = setInterval(function () {
+                var newOffset = parent.scrollLeft() + (scrollStep * modifier);
+
+                parent.scrollLeft(newOffset);
+            }, 10);
+        }
+    }
+
+    function stopScrolling() {
+        clearInterval(scrollHandle);
+        scrollHandle = 0;
+    }
+
+}());
+
+<!-- CSS -->
+
+#parent {
+    width:6000px;
+}
+.contentBlock {
+    font-size:10em;
+    text-align:center;
+    line-height:400px;
+    height:400px;
+    width:500px;
+    margin:10px;
+    border:1px solid black;
+    float:left;
+}
+.panner {
+    border:1px solid black;
+    display:block;
+    position:fixed;
+    width:50px;
+    height:50px;
+    top:45%;
+}
+.active{
+    color:red;
+}
+#panLeft {
+    left:0px;
+}
+#panRight {
+    right:0px;
+}
+
+<!-- HTML -->
+
+<div id="parent">
+    <div class="contentBlock">1</div>
+    <div class="contentBlock">2</div>
+    <div class="contentBlock">3</div>
+    <div class="contentBlock">4</div>
+    <div class="contentBlock">5</div>
+</div>
+<span id="panLeft" class="panner" data-scroll-modifier='-1'>Left</span>
+
+<span id="panRight" class="panner" data-scroll-modifier='1'>Right</span>
+
+<!-- ======================================================================================================== -->
+
+<div id="browser">
+  <a href="#" id="left-button"><img src="left-button.jpg" /></a>
+  <div id="content">
+      <img src="thumb_1.jpg" />
+      <img src="thumb_2.jpg" />
+      <img src="thumb_3.jpg" /> 
+      <img src="thumb_4.jpg" />
+      <img src="thumb_5.jpg" />
+      <img src="thumb_6.jpg" />
+  </div>
+  <a href="#" id="right-button"><img src="right-button.jpg" /></a>
+</div>
+
+<script>
+   $('#right-button').click(function() {
+      event.preventDefault();
+      $('#content').animate({
+        marginLeft: "-=200px"
+      }, "fast");
+   });                                                          
+
+   $('#left-button').click(function() {
+      event.preventDefault();
+      $('#content').animate({
+        marginLeft: "+=200px"                      
+      }, "fast");
+   });                                                          
+</script>
+
+Then the same for the left button, except - marginLeft: +="200px".                                                
+
+<!-- ====================================================================================================== -->
+
+    <div class="codingImage">
+        <img src="image/01.png" class="codeImageWidth firstCodeImage"/>
+        <img src="image/02.png" class="codeImageWidth secondCodeImage"/>
+        <img src="image/03.png" class="codeImageWidth thirdCodeImage"/>
+        <img src="image/04.png" class="codeImageWidth fourthCodeImage"/>
+        <img src="image/05.png" class="codeImageWidth fifthCodeImage"/>
+        <img src="image/06.png" class="codeImageWidth sixthCodeImage"/>
+        <img src="image/07.png" class="codeImageWidth seventhCodeImage"/>              
+    </div>
+
+<div class="sliderDiv">
+    
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1100);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 900px; height: 430px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 900px; height: 430px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="image/11.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="image/12.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="image/13.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="image/14.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="image/15.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="image/16.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="image/17.jpg" />
+            </div>
+            <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    </div>
+    <script>
+        jssor_1_slider_init();
+    </script>
+
+</div>
+
+
+        <div class="floatFooter col-xs-12">
+
+        </div>
+
+<!-- PROJECT STRENGTH LEVEL -->
+
+            <div class="projectStrengthLevelDiv">
+                <div class="firstStrengthBar-low"></div>
+                <div class="firstProjectStrengthLevel">
+                    <input type="radio" id="liteVersion" name="projectStrengthLevel" class="allCheckbox">
+                </div>
+                <div class="secondStrengthBar-low"></div>
+                <div class="secondProjectStrengthLevel">
+                    <input type="radio" id="premiumVersion" name="projectStrengthLevel" class="allCheckbox">
+                </div>
+            </div>                 
+
+
